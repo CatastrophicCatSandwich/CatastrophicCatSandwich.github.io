@@ -1,0 +1,80 @@
+/* --- put your css here --- */
+body {
+  background-color:skyblue;
+ 
+}
+
+nav {
+  background-color:green;
+  position:-webkit-sticky;
+  position:sticky;
+  opacity:90%;
+  padding:5px;
+  font-size:20px;
+}
+
+#igottabeme {
+  font-family:Helvetica;
+}
+
+.cat {
+    position:-webkit-sticky;
+    position:sticky;
+    float:right;
+  }
+
+.dog {
+  float:right;
+  /*you can make the doggo float right if you want to, you just need to figure out the right lines of code that make it move up and left */
+  left:50px;
+  top:150px;
+}
+
+.classy {
+  margin-left:10px;
+}
+
+#div {
+  margin-bottom:50px;
+}
+
+span {
+ width:100px;
+ height:50px;
+ padding:5px 20px;
+ border:solid blue 5px;
+ background-color:yellow;
+}
+
+
+
+/* external css is imported into html using the <link> tag in the <head> section, as shown below.
+
+  <head>
+    <link rel="stylesheet" href="assignment02.css">
+  </head>
+
+*/
+
+
+
+/* --- pre-existing css --- */
+ tr:nth-child(even) {
+  background-color: gray;
+}
+tr:nth-child(odd) {
+  background-color: white;
+}
+ th {
+  color: white;
+  background-color: black;
+}
+ td:hover {
+  background-color: yellow;
+}
+ td {
+  text-align: right;
+}
+input[type="text"]:focus {
+  background-color: pink;
+}
