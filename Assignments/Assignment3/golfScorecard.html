@@ -1,4 +1,252 @@
 <h1>Golf Scorecard</h1>
+<style>
+  /* center-align table columns */
+th, td {text-align: center;} 
+</style>
+
+<script>
+  let elem = [];
+// assign the entire table row for hole 1 to a variable, elem
+elem[1]
+  = document.getElementById("1");
+
+elem[2]
+  = document.getElementById("2");
+
+elem[3]
+  = document.getElementById("3");
+
+elem[4]
+  = document.getElementById("4");
+
+elem[5]
+  = document.getElementById("5");
+
+elem[6]
+  = document.getElementById("6");
+
+elem[7]
+  = document.getElementById("7");
+
+elem[8]
+  = document.getElementById("8");
+
+elem[9]
+  = document.getElementById("9");
+
+elem[10]
+  = document.getElementById("10");
+
+elem[11]
+  = document.getElementById("11");
+
+elem[12]
+  = document.getElementById("12");
+
+elem[13]
+  = document.getElementById("13");
+
+elem[14]
+  = document.getElementById("14");
+
+elem[15]
+  = document.getElementById("15");
+
+elem[16]
+  = document.getElementById("16");
+
+elem[17]
+  = document.getElementById("17");
+
+elem[18]
+  = document.getElementById("18");
+// display the number of children (all td elements)
+// console.log(elem.children.length);
+// display the content of the + button, which is the first child of the fifth element
+// console.log(elem.children[4].children[0]);
+
+// assign a function to the + (row 1) button
+elem[1].children[4].children[0].onclick
+  = function(){add1(elem[1]);};
+
+// create an "add1" function
+function add1 (elem) {
+  if(elem.children[2].innerHTML == "-")
+    elem.children[2].innerHTML = "1";
+  else {
+    let currentScore = elem.children[2].innerHTML;
+    currentScore = Number.parseInt(currentScore);
+    elem.children[2].innerHTML = currentScore + 1;
+  }
+}
+
+
+
+// assign a function to the + (row 2) button
+elem[2].children[4].children[0].onclick
+  = function(){add1(elem[2]);};
+
+// assign a function to the + (row 3) button
+elem[3].children[4].children[0].onclick
+  = function(){add1(elem[3]);};
+
+// assign a function to the + (row 4) button
+elem[4].children[4].children[0].onclick
+  = function(){add1(elem[4]);};
+
+// assign a function to the + (row 5) button
+elem[5].children[4].children[0].onclick
+  = function(){add1(elem[5]);};
+
+// assign a function to the + (row 6) button
+elem[6].children[4].children[0].onclick
+  = function(){add1(elem[6]);};
+
+// assign a function to the + (row 7) button
+elem[7].children[4].children[0].onclick
+  = function(){add1(elem[7]);};
+
+// assign a function to the + (row 8) button
+elem[8].children[4].children[0].onclick
+  = function(){add1(elem[8]);};
+
+// assign a function to the + (row 9) button
+elem[9].children[4].children[0].onclick
+  = function(){add1(elem[9]);};
+
+// assign a function to the + (row 10) button
+elem[10].children[4].children[0].onclick
+  = function(){add1(elem[10]);};
+
+
+// assign a function to the + (row 11) button
+elem[11].children[4].children[0].onclick
+  = function(){add1(elem[11]);};
+
+// assign a function to the + (row 12) button
+elem[12].children[4].children[0].onclick
+  = function(){add1(elem[12]);};
+
+// assign a function to the + (row 13) button
+elem[13].children[4].children[0].onclick
+  = function(){add1(elem[13]);};
+
+// assign a function to the + (row 14) button
+elem[14].children[4].children[0].onclick
+  = function(){add1(elem[14]);};
+
+// assign a function to the + (row 15) button
+elem[15].children[4].children[0].onclick
+  = function(){add1(elem[15]);};
+
+// assign a function to the + (row 16) button
+elem[16].children[4].children[0].onclick
+  = function(){add1(elem[16]);};
+
+// assign a function to the + (row 17) button
+elem[17].children[4].children[0].onclick
+  = function(){add1(elem[17]);};
+
+// assign a function to the + (row 18) button
+elem[18].children[4].children[0].onclick
+  = function(){add1(elem[18]);};
+
+
+// create a "subtract1" function:
+function subtract1 (elem) {
+  if(elem.children[2].innerHTML == "-")
+    elem.children[2].innerHTML = "1";
+  else {
+    let currentScore = elem.children[2].innerHTML;
+    currentScore = Number.parseInt(currentScore);
+    elem.children[2].innerHTML = currentScore - 1;
+  }
+}
+
+
+
+//list of subtraction button shenanigans:
+
+// assign a function to the - (row 1) button
+elem[1].children[4].children[1].onclick
+  = function(){subtract1(elem[1]);};
+
+// assign a function to the - (row 2) button
+elem[2].children[4].children[1].onclick
+  = function(){subtract1(elem[2]);};
+
+// assign a function to the - (row 3) button
+elem[3].children[4].children[1].onclick
+  = function(){subtract1(elem[3]);};
+
+// assign a function to the - (row 4) button
+elem[4].children[4].children[1].onclick
+  = function(){subtract1(elem[4]);};
+
+// assign a function to the - (row 5) button
+elem[5].children[4].children[1].onclick
+  = function(){subtract1(elem[5]);};
+
+// assign a function to the - (row 6) button
+elem[6].children[4].children[1].onclick
+  = function(){subtract1(elem[6]);};
+
+// assign a function to the - (row 7) button
+elem[7].children[4].children[1].onclick
+  = function(){subtract1(elem[7]);};
+
+// assign a function to the - (row 8) button
+elem[8].children[4].children[1].onclick
+  = function(){subtract1(elem[8]);};
+
+// assign a function to the - (row 9) button
+elem[9].children[4].children[1].onclick
+  = function(){subtract1(elem[9]);};
+
+// assign a function to the - (row 10) button
+elem[10].children[4].children[1].onclick
+  = function(){subtract1(elem[10]);};
+
+// assign a function to the - (row 11) button
+elem[11].children[4].children[1].onclick
+  = function(){subtract1(elem[11]);};
+
+// assign a function to the - (row 12) button
+elem[12].children[4].children[1].onclick
+  = function(){subtract1(elem[12]);};
+
+// assign a function to the - (row 13) button
+elem[13].children[4].children[1].onclick
+  = function(){subtract1(elem[13]);};
+
+// assign a function to the - (row 14) button
+elem[14].children[4].children[1].onclick
+  = function(){subtract1(elem[14]);};
+
+// assign a function to the - (row 15) button
+elem[15].children[4].children[1].onclick
+  = function(){subtract1(elem[15]);};
+
+// assign a function to the - (row 16) button
+elem[16].children[4].children[1].onclick
+  = function(){subtract1(elem[16]);};
+
+// assign a function to the - (row 17) button
+elem[17].children[4].children[1].onclick
+  = function(){subtract1(elem[17]);};
+
+// assign a function to the - (row 18) button
+elem[18].children[4].children[1].onclick
+  = function(){subtract1(elem[18]);};
+
+
+//over = score - par
+elem[1].children[4].children[1].onclick
+  = function(){subtract1(elem[1]);};
+  
+  </script>
+
+
 <table class="table table-striped">
   <tr id="0">
     <th>Hole</th>
