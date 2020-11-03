@@ -10,7 +10,7 @@ clubDistanceList.html
   undoLastShot()
   resetAllClubDistances()
   displayAbout()
-  ReturnToHomePage()
+  returnToHomePage()
   
 clubEntry.html
  
@@ -133,7 +133,7 @@ function displayAbout() {
 }
 
 // Go back to home page (after clicking the "Return to Home Page" button on the "About" page
-function ReturnToHomePage() {
+function returnToHomePage() {
 	window.location.href = "clubDistanceList.html";	
 	
 }
