@@ -5,7 +5,7 @@ clubDistanceList.html
 
   loadClubDistances()
   appendTableRows()
-  displayClubEntry()
+  displayClubEntry() 
   displayClubDistanceEntryForm(c)
   undoLastShot()
   resetAllClubDistances()
