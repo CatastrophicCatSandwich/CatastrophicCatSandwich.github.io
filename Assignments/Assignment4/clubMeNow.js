@@ -15,7 +15,7 @@ clubDistanceList.html
 clubEntry.html
  
   addClub()
-  cancelClub()
+  cancelClub() 
   
 clubDistanceEntry.html
 
