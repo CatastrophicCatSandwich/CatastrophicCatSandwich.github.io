@@ -10,6 +10,7 @@ clubDistanceList.html
   undoLastShot()
   resetAllClubDistances()
   displayAbout()
+  ReturnToHomePage()
   
 clubEntry.html
  
@@ -130,6 +131,15 @@ function displayAbout() {
 	// your code here
 	window.location.href = "clubAbout.html";
 }
+
+// Go back to home page (after clicking the "Return to Home Page" button on the "About" page
+function ReturnToHomePage() {
+	window.location.href = "clubDistanceList.html";	
+	
+}
+
+
+
 
 // navigate to "Penalty Info" screen
 function displayPenaltyInfo() {
