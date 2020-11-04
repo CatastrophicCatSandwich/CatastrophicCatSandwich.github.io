@@ -214,3 +214,12 @@ function updateStats(shotDistance=0) {
 		window.location.href = "clubDistanceList.html"; 
 	}
 }
+
+
+
+// ----- Functions (clubEntry.html) -----
+	function addClub() {
+		alert("I am an alert box!");
+		
+	}
+
