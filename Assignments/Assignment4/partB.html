@@ -81,7 +81,6 @@
 <script>
 // 6. modify basic JS object, with "this" keyword
 let person = {
-  address: " 8745 Fake Address Avenue",
   city: "New York City",
   state: "New York",
   zipcode: ("77777"),
@@ -89,11 +88,11 @@ let person = {
   lastName: "Doe",
   age: 45,
   fullName: function() {return this.firstName  + " " + person.lastName},
-  fullAddress: function() {return this.address  + "<br>" + person.city + ", " + person.state + " " + person.zipcode}
+  fullAddress: function() {return this.streetAddress  + "<br>" + person.city + ", " + person.state + " " + person.zipcode}
 }
 document.getElementById("1A").innerHTML = person.fullName();
 
-document.getElementById("1B").innerHTML = person.fullAddress();
+
 
 // Instructions
 // modify person object, above, as follows
@@ -102,6 +101,7 @@ document.getElementById("1B").innerHTML = person.fullAddress();
 // Display output of fullAddress() in <div id="1B">
 person.streetAddress = "123 Main Street";
 
+document.getElementById("1B").innerHTML = person.fullAddress();
 // ==================
 
 // 7. create basic DOM object
@@ -273,8 +273,6 @@ console.log(fieldLabel);
 console.log(fieldEntry);
 console.log(fieldError);
 */
-	
-	
 	
 </script>
 
