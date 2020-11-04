@@ -216,10 +216,3 @@ function updateStats(shotDistance=0) {
 }
 
 
-
-// ----- Functions (clubEntry.html) -----
-	function addClub() {
-		alert("I am an alert box!");
-		
-	}
-
