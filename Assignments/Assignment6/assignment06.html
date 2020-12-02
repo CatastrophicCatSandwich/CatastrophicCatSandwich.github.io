@@ -7,10 +7,70 @@
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<p>Shopping List</p>
+		
+		
+		<div ng-app=”Angular” ng-controller=”myController”>
+			<ul>
+				<li ng-repeat="x in items">{{x}}</li>
+				
+			</ul>
+			
+			<input ng-model="itemToAdd" />
+			
+			<button ng-click="addItem()">Add</button>
+			
+		</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		<title>College Debt Estimator</title>
 
 		<!-- bootstrap 4 -->
@@ -131,10 +191,22 @@
     <script>
       // --- global variables ---
 
+	    
+	    
+	    
+	    
+	    
 	    //initialize a module in JS
 	    let app = angular.module("Angular", []);
 	    
-	    
+	    app.controller(“myController”, function($scope) {
+		    $scope.items = ["Milk", "Bread", "Cheese"];
+		    $scope.addItem = function () {
+			$scope.items.push($scope.itemToAdd);    
+		    }
+
+});   
+ 
 	    
 	    
 var loans = [
